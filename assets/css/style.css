@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.font-heading {
+    font-family: 'Poppins', sans-serif;
+}
+.nav-active {
+    color: #4f46e5;
+    font-weight: 600;
+}
+.logo-white-glow {
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.25));
+}
+/* Slideshow styles */
+.slide {
+    transition: opacity 1s ease-in-out;
+}
+/* Testimonial slide styles */
+.testimonial-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+.testimonial-slide.active {
+    display: block;
+}
+
+
+.testimonial-slide > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Institution-specific brand colors */
+.border-brand-durham {
+    border-color: #7d2a7f; /* Durham's dark magenta/purple */
+}
+.border-brand-ncl-college {
+    border-color: #e52e24; /* Newcastle College's Red */
+}
+.border-brand-newcastle {
+    border-color: #0073bc; /* Newcastle's Mid Blue */
+}
+.border-brand-northumbria {
+    border-color: #C71A25; /* Northumbria's Red */
+}
+.border-brand-teesside {
+    border-color: #2F4460; /* Teesside's Blue */
+}
+.border-brand-sunderland {
+    border-color: #233141; /* Sunderland's Ebony Clay */
+}
+
