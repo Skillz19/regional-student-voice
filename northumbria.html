@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northumbria University | Regional Student Voice Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800 flex flex-col min-h-screen">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-heading text-2xl font-extrabold text-slate-800">RSVN</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="institutions.html"
+                    class="text-slate-600 hover:text-indigo-600 transition duration-300 nav-active">Our Institutions</a>
+                <a href="events.html" class="text-slate-600 hover:text-indigo-600 transition duration-300">Events</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-md border-t border-slate-200">
+            <a href="index.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Home</a>
+            <a href="institutions.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Our Institutions</a>
+            <a href="events.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Events</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+<section class="relative text-white bg-gradient-to-r from-slate-900 to-blue-900">
+    <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 min-h-[50vh]">
+            
+            <div class="px-6 py-24 flex flex-col justify-center">
+                <h1 class="font-heading text-5xl md:text-6xl font-extrabold leading-tight" data-aos="fade-up">Northumbria University</h1>
+                <p class="mt-4 text-lg max-w-lg opacity-80" data-aos="fade-up" data-aos-delay="100">A research-rich, business-focused, professional university.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+        <div class="container mx-auto p-6 md:p-12 relative z-20 -mt-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-northumbria h-full">
+                        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                        <div>
+                            <h4 class="font-semibold">Vicky Blacklock</h4>
+                            <p class="text-sm text-slate-500">Inclusive Education Coordinator</p>
+                            <a href="mailto:vicky.blacklock@northumbria.ac.uk" class="text-indigo-600 hover:underline">vicky.blacklock@northumbria.ac.uk</a>
+                            <a href="https://linkedin.com/in/vickyblacklock" target="_blank" class="flex items-center text-slate-500 hover:text-indigo-600 mt-2">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-northumbria" data-aos="fade-left">
+                        <h3 class="text-xl font-bold mb-3">Staff Testimonial</h3>
+                        <blockquote class="border-l-4 border-slate-200 pl-4 italic text-slate-600">
+                            <p>"Being part of this network aligns many of my professional interests and values and is a fantastic 
+            way to explore and share inclusive practice with regional students and colleagues. 
+            Each event provides a supportive and welcoming environment to allow the voices of our 
+            underrepresented students to be heard, ensuring their insight and reflections are integral to 
+                    creating a sense of belonging in HE within the North East."</p>
+                            <cite class="block mt-4 not-italic font-semibold text-slate-800">- Vicky Blacklock, Inclusive Education Coordinator</cite>
+                        </blockquote>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-brand-northumbria" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="text-xl font-bold mb-3">Student Testimonial</h3>
+                        <blockquote class="border-l-4 border-slate-200 pl-4 italic text-slate-600">
+                            <p>""Presenting at the Regional Student Voice Event in Durham was a fantastic experience. It was so inspiring to hear about the work other universities are doing to support their students. I left the event with lots of fresh ideas to incorporate into some of our current projects at Northumbria."</p>
+                            <cite class="block mt-4 not-italic font-semibold text-slate-800">- Lucy Ivison, Senior Student Inclusion Consultant</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 North-East Network. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed & Developed by <a href="https://kejmandigital.netlify.app/" target="_blank" class="text-indigo-400 hover:underline">Kejman Digital</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
