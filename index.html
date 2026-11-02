@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Regional Student Voice Network</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-heading text-2xl font-extrabold text-slate-800">RSVN</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 hover:text-indigo-600 transition duration-300 nav-active">Home</a>
+                <a href="institutions.html" class="text-slate-600 hover:text-indigo-600 transition duration-300">Our Institutions</a>
+                <a href="events.html" class="text-slate-600 hover:text-indigo-600 transition duration-300">Events</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-md border-t border-slate-200">
+            <a href="index.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Home</a>
+            <a href="institutions.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Our Institutions</a>
+            <a href="events.html" class="block py-3 px-6 text-sm hover:bg-slate-100">Events</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="hero-slideshow" class="relative h-[90vh] flex items-center text-white">
+            <div class="slide absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/homeImage.jpg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('assets/images/pastEvents/durhamUniPastEvent/Durham Uni - June 2025.jpg');"></div>
+            <div class="slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('assets/images/pastEvents/newcastleUniPastUni/Newcastle Uni - Nov 2024.jpg');"></div>
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 container mx-auto px-6">
+                <div class="max-w-3xl text-center md:text-left">
+                    <h1 class="font-heading text-5xl md:text-7xl font-extrabold" data-aos="fade-up">Empowering Student Voices Across the North East</h1>
+                    <p class="mt-6 text-lg max-w-xl" data-aos="fade-up" data-aos-delay="100">A collaborative network of institutions dedicated to enhancing the student experience through shared innovation.</p>
+                    <a href="#next-event" class="mt-10 inline-block bg-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">See Our Next Event</a>
+                </div>
+            </div>
+            <div id="slideshow-dots" class="absolute z-20 bottom-8 left-1/2 -translate-x-1/2 flex space-x-3"></div>
+        </section>
+
+        <section id="stats-bar" class="bg-slate-800 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div data-aos="fade-up">
+                        <p class="font-heading text-5xl font-bold" data-goal="6">0</p>
+                        <p class="text-sm uppercase tracking-widest text-slate-400 mt-2">Member Institutions</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <p class="font-heading text-5xl font-bold" data-goal="2">0</p>
+                        <p class="text-sm uppercase tracking-widest text-slate-400 mt-2">Events Per Year</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <p class="font-heading text-5xl font-bold" data-goal="450">0</p>
+                        <p class="text-sm uppercase tracking-widest text-slate-400 mt-2">Students Impacted</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="next-event" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                 <h2 class="font-heading text-4xl font-extrabold text-slate-800 text-center mb-12" data-aos="fade-up">Our Next Event</h2>
+                <div id="next-host-container" data-aos="fade-up" data-aos-delay="100">
+                    </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-slate-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="font-heading text-4xl font-extrabold" data-aos="fade-up">What Our Members Say</h2>
+                    <p class="mt-2 text-slate-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Hear directly from the staff and students who make our network thrive.</p>
+                </div>
+                <div id="testimonial-slideshow" class="relative max-w-3xl mx-auto mt-12 bg-white/5 p-8 rounded-2xl shadow-lg border border-white/10" data-aos="fade-up" data-aos-delay="200">
+                    </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-slate-100 border-t border-slate-200">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-heading text-4xl font-extrabold text-slate-800" data-aos="fade-up">Our Member Institutions</h2>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="50">Click on a logo to learn more about each institution's involvement.</p>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="durham.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets/images/durhamLogo.png" alt="Durham University Logo" class="max-h-16 w-auto object-contain grayscale group-hover:grayscale-0 transition-all"></a>
+                    <a href="newcastle-college.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets\images\NcusLogo.png" alt="Newcastle College Logo" class="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all rounded-md"></a>
+                    <a href="newcastle-university.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets/images/newcastleLogo.png" alt="Newcastle University Logo" class="max-h-20 w-auto object-contain grayscale group-hover:grayscale-0 transition-all"></a>
+                    <a href="northumbria.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets/images/northumbriaLogo.png" alt="Northumbria University Logo" class="max-h-16 w-auto object-contain grayscale group-hover:grayscale-0 transition-all"></a>
+                    <a href="teesside.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets/images/teesideLogo.png" alt="Teesside University Logo" class="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all"></a>
+                    <a href="sunderland.html" class="group flex items-center justify-center p-4 bg-white rounded-xl h-28 transition-all duration-300 hover:shadow-xl border border-slate-200 transform hover:-translate-y-2"><img src="assets/images/sunderlandLogo.png" alt="University of Sunderland Logo" class="max-h-16 w-auto object-contain grayscale group-hover:grayscale-0 transition-all"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-slate-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>© 2025 North-East Network. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed & Developed by <a href="https://kejmandigital.netlify.app/" target="_blank" class="text-indigo-400 hover:underline">Kejman Digital</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
